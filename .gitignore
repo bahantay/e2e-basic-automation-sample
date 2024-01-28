@@ -1,0 +1,4 @@
+/node_modules
+cypress/assets
+.DS_Store
+**/*.exe
