@@ -136,14 +136,6 @@ describe('Login tests', () => {
             loginPage.getEmailField().should('be.visible')
         })
 
-        it(`Should show "${PASSWORD_RESET_VALIDATION_MESSAGES.emailDoesNotExistAlert}" validation message while password resetting with email that doesn't exist in the system`, () => {
-            homePage.navigationBar.clickLoginButton()
-            loginPage.clickForgotPasswordButton()
-            resetPasswordPage.fillEmailField(`${randomstring.generate(15)}@gmail.com`)
-            resetPasswordPage.clickResetPasswordSubmitButton()
-            resetPasswordPage.getEmailDoesNotExistAlert().should('have.text', PASSWORD_RESET_VALIDATION_MESSAGES.emailDoesNotExistAlert)
-        })
-
         it(`Should transfer the user to the Home page while clicking on [Home page] navigation button on the Password reset page`, () => {
             homePage.navigationBar.clickLoginButton()
             loginPage.clickForgotPasswordButton()

@@ -66,11 +66,6 @@ export class ResetPasswordPage extends BasePage {
         this.getReturnToLoginButtonOnSuccessfulResetPage().click()
     }
 
-    public getEmailDoesNotExistAlert() {
-        cy.task('log', 'Getting email does not exist alert...')
-        return cy.get('div.Alert_iwrp__5q1xH')
-    }
-
     public getHomePageButton() {
         cy.task('log', 'Getting [home page] button...')
         return cy.get('a[href="https://w3schools.com"]')

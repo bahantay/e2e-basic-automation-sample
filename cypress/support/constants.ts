@@ -30,5 +30,4 @@ export const PASSWORD_RESET_VALIDATION_MESSAGES = {
     InvalidEmailValidationMessage: 'Please enter a valid email address',
     successfulValidationEmailMessage: "We'll email you a password reset link.",
     passwordResetSpamInfoMessage: "If the email doesn't show up soon, check your spam folder. We sent it from login@w3schools.com.",
-    emailDoesNotExistAlert: 'A user with this email does not exist'
 }
