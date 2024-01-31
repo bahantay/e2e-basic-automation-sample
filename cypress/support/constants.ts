@@ -31,3 +31,23 @@ export const PASSWORD_RESET_VALIDATION_MESSAGES = {
     successfulValidationEmailMessage: "We'll email you a password reset link.",
     passwordResetSpamInfoMessage: "If the email doesn't show up soon, check your spam folder. We sent it from login@w3schools.com.",
 }
+
+export const SIGN_UP_VALIDATION_MESSAGES = {
+    invalidEmailValidationMessage: 'Looks like you forgot something',
+    emptyEmailValidationMessage: 'Please enter an email',
+    validCredsValidationMessage: "Your password is secure and you're all set!",
+    invalidNameErrorMessage: 'Add a name that only contains letters - and no special characters.'
+}
+
+export const SIGN_UP_INVALID_PASSWORDS = {
+    'One lowercase character': 'TEST123!',
+    'One uppercase character': 'test123!',
+    'One number': 'Testing!',
+    'One special character': 'Test1234',
+    '8 characters minimum': 'Test12!',
+}
+
+export const SIGN_UP_INVALID_NAMES = {
+    'Has number': 'Name1',
+    'Has special character': 'Name!',
+}
