@@ -28,4 +28,9 @@ export class BasePage {
         cy.task('log', `Clicking on "Accept all & visit the site" button`)
         this.getAcceptAllButton().click()
     }
+
+    public getCurrentUrl() {
+        cy.task('log', 'Getting current url...')
+        return cy.url()
+    }
 }
